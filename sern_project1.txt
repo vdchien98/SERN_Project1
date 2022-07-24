@@ -1,0 +1,10 @@
+Tạo backend : 
+npm init ( khởi tạo packet.json)
+khởi tạo file index.js và sử dụng express
+-Tạo bảng trong databaseworlbach và kết nối giữa database vs backend
+
+
+
+front end 
+Chú ý cách nhúng font chữ , với lại cài scss
+cài axios để kết nối giữa backend và frontend
