@@ -1,0 +1,6 @@
+backend :
+- cài nodemon
+- Mã hóa mật khẩu và giải mã bằng crypto
+- cách thêm 1 cột trong bảng database
+
+  

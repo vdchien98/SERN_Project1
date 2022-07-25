@@ -10,7 +10,7 @@ const db = mysql.createConnection({
     host: 'localhost',
     password: '09041998', // đây là mật khẩu trên user
     database: 'sern1',
-    port: 3306,
+    port: 3307,
 });
 
 app.post('/create', (req, res) => {
