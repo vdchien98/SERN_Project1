@@ -8,3 +8,15 @@ khởi tạo file index.js và sử dụng express
 front end 
 Chú ý cách nhúng font chữ , với lại cài scss
 cài axios để kết nối giữa backend và frontend
+
+
+Vòng đời của 1 componet 
+
+componentDidMount(): 
+-Ngay sau khi hàm render được gọi đến lần đầu tiên chạy xong thì hàm này sẽ được chạy.
+-Thường dùng để fetch dữ liệu từ server và sau đó setState để render dữ liệu ra.
+- Đến đây thì các phần tử đã được sinh ra rồi, và có thể tương tác với DOM bằng JS trong hàm này.
+
+componentDidUpdate(prevProps, prevState)
+-Được gọi ngay sau render() từ lần render thứ 2 trở đi.
+-Đây cũng là 1 cơ hội để thao tác với các phần tử DOM bằng JS.
