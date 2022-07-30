@@ -46,6 +46,12 @@ function App() {
             console.log(response);
         });
     };
+    const handleUpdate = (value) => {
+        // console.log('đây là sửa', value);
+        setName(value.name);
+        console.log(value.name);
+    };
+
     return (
         <div className="App">
             <div className="information">
@@ -53,6 +59,7 @@ function App() {
                 <input
                     type="text"
                     className=""
+                    value={name}
                     onChange={(event) => {
                         setName(event.target.value);
                     }}
@@ -96,12 +103,21 @@ function App() {
                 <button onClick={getEmployees}>Show Employee</button>
                 {employeeList.map((value, index) => {
                     return (
-                        <div className="employee">
+                        <div className="employee" key={index}>
                             <h3>Name: {value.name}</h3>
                             <h3>Age: {value.age}</h3>
                             <h3>Country: {value.country}</h3>
                             <h3>Position: {value.position}</h3>
                             <h3>Wage: {value.wage}</h3>
+                            <button
+                                className="update-delete"
+                                onClick={() => {
+                                    handleUpdate(value);
+                                }}
+                            >
+                                Sửa
+                            </button>
+                            <button className="update-delete">Xóa</button>
                         </div>
                     );
                 })}
